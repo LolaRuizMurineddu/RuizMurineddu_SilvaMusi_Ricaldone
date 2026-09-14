@@ -8,25 +8,35 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            <h1>
-                Back 2 Wear
-            </h1>
-
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="register.html">REGISTRO</a></li>
-                <li><a href="login.html">LOGIN</a></li>
-            </ul>
-
-            <form action="search-results.html" method="GET"></form>
-            <div>
-                <label for="buscar">BUSCAR:</label>
-                <input id="buscar" type="text" name="buscar" value="">
+    <header class="main-header">
+        <div class="header-content">
+         
+            <div class="header-top">
+                <h1 class="brand-title">BACK2WEAR</h1>
             </div>
-        </header>
-    </div>
+
+          
+            <div class="header-bottom">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="registro.html">REGISTRARSE</a></li>
+                        <li><a href="login.html">INICIAR SESION</a></li>
+                    </ul>
+                </nav>
+
+                <form class="search-form" action="#" method="GET">
+                    <input type="text" placeholder="BUSCAR" name="q">
+                    <button type="submit" aria-label="Buscar">
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="header-logo">
+            <img src="./img/logo.png" alt="B2W Vintage Logo">
+        </div>
+    </header>
 </body>
 
 </html>
