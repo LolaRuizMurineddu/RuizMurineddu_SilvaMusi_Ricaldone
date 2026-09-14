@@ -14,7 +14,7 @@ li {
 body{
     background-color: #edede9;
 }
-.main-header {
+.header {
     display: flex;
     width: 100%;
     height: 120px; 
@@ -22,7 +22,7 @@ body{
 }
 
 
-.header-content {
+.contenedor {
     flex: 1; 
     background-color: #d6b8b4; 
     display: flex;
@@ -30,7 +30,7 @@ body{
 }
 
 
-.header-top {
+.titulo {
     flex: 1;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ body{
     border-bottom: 1px solid #7c4852;
 }
 
-.brand-title {
+.texto-titulo {
     font-family: monospace, Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -47,7 +47,7 @@ body{
 }
 
 
-.header-bottom {
+.menu {
     flex: 1;
     display: flex;
     justify-content: space-between;
@@ -55,17 +55,17 @@ body{
 }
 
 
-.main-nav ul {
+.navegador ul {
     display: flex;
     list-style: none;
     height: 100%;
 }
 
-.main-nav li {
+.navegador li {
     border-right: 1px solid #7c4852;
 }
 
-.main-nav a {
+.navegador a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,12 +78,8 @@ body{
     font-weight: bold;
 }
 
-.main-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
-
-.search-form {
+.buscar {
     display: flex;
     align-items: center;
     border-left: 1px solid #7c4852;
@@ -93,7 +89,7 @@ body{
     justify-content: space-between;
 }
 
-.search-form input {
+.buscar input {
     background: transparent;
     border: none;
     outline: none;
@@ -104,11 +100,11 @@ body{
     width: 100%;
 }
 
-.search-form input::placeholder {
+.buscar input::placeholder {
     color: #6d3947;
 }
 
-.search-form button {
+.buscar button {
     background: transparent;
     border: none;
     color: #6d2e46;
@@ -119,7 +115,7 @@ body{
 }
 
 
-.header-logo {
+.logo {
     width: 180px; 
     background-color: #edede9; 
     border-left: 1px solid #7c4852;
@@ -129,7 +125,7 @@ body{
     padding: 10px;
 }
 
-.header-logo img {
+.logo img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
