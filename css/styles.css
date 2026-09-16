@@ -178,7 +178,8 @@ margin-top: 40px;
 color: #6d2e46;
 font-family: monospace, Arial, sans-serif;
 margin-bottom:30px;
-
+border-top: #6d2e46 solid 1px;
+padding-top: 20px;
 }
 
 .prendas{
@@ -207,7 +208,7 @@ margin-bottom:30px;
     padding: 3px;
     display:block;
     margin-top:15px;
-    margin-left:0
+    margin-bottom: 20px;
     
 }
 
@@ -219,4 +220,146 @@ margin-bottom:30px;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
+}
+
+footer {
+    background-color: #d6b8b4;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.soporte {
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+padding: 20px;
+}
+
+.cuenta {
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+padding: 20px;
+
+}
+
+.hecho {
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+padding: 20px;
+}
+
+.productoscat {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+.homedirec { 
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+    margin: 20px;
+}
+
+.nuevos {
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+    margin: 30px;
+}
+.no_hay {
+    text-align: center;
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.item {
+    display: flex;
+    margin: 60px;
+    padding: 20px;
+    border-bottom: 1px solid #6d2e46;
+}
+
+.chico img{
+   width: 152px;
+   height: 140px;
+   display: block;
+   margin-top: 20px;
+
+}
+
+.grande img{
+    width: 508px;
+    height: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.desc h1{
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.grande {
+    display: flex;
+    margin: 20px;
+}
+
+.desc p {
+    color: #6d2e46;
+     font-family: monospace, Arial, sans-serif;
+}
+
+.mismo {
+     color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tengorazon {
+    border-top: #6d2e46 solid 1px;
+    padding-top: 10px;
+}
+
+.menos, .uno, .mas, .comprar {
+    display: inline-block;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+.menos {
+    border: 1px solid #6d2e46;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.mas {
+    background-color: #d6b8b4;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.comprar {
+    margin-left: 300px;
+background-color: #d6b8b4;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.estrella {
+    font-size: 100px;
+    color: #fae588;
+}
+
+.formulario form{
+    color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+    padding:20px;
+    
 }
