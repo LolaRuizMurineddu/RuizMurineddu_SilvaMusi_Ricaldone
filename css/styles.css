@@ -127,9 +127,9 @@ body {
 }
 
 .logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    width: 178px;
+    height: 118px;
+
 }
 
 .padre-categoria {
@@ -177,6 +177,10 @@ body {
 
 }
 
+
+.father{
+    margin-left:50px;
+}
 .prod {
     margin-top: 40px;
     color: #6d2e46;
@@ -197,9 +201,10 @@ body {
     padding: 10px;
     margin-right: 0;
     border-radius: 7px;
-      box-shadow: 0 4px 12px #00000022;
-      
-
+    box-shadow: 0 5px 12px #00000022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -209,7 +214,7 @@ a {
     color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
     text-decoration: none;
-
+ 
 }
 
 .prendas img {
@@ -217,26 +222,19 @@ a {
     height: 274px;
     margin-top: 10px;
     margin-bottom: 5px;
-
+  
 }
 
 .botondet {
     color: #6d2e46;
     background-color: #d6b8b4;
-    width: fit-content;
-    height: 35px;
+    box-shadow: 0 3px 5px #6d2e46;
     border: #6d2e46 solid 1px;
-    padding: 3px;
-    margin: auto;
-    align-items: center;
-  box-shadow: 0 3px 5px #6d2e46;
-  border-radius: 5px;
-    
+    border-radius: 5px;
 }
 
-.botondet a {
-    margin-bottom: 20px;
-    text-align: center;
+.botondet a{
+    padding-left:36px;
 }
 
 .precio {
@@ -249,6 +247,7 @@ a {
     flex-wrap: wrap;
 }
 
+
 footer {
     background-color: #d6b8b4;
     display: flex;
@@ -256,7 +255,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-  
+
 }
 
 .soporte {
@@ -278,13 +277,6 @@ footer {
     padding: 20px;
 }
 
-.productoscat {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 60px;
-    justify-content: center;
-}
 
 .homedirec {
     color: #6d2e46;
@@ -292,13 +284,13 @@ footer {
     margin: 20px;
 
 
-
 }
 
 .nuevos {
     color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
-    margin: 30px;
+    margin-left:20px;
+    margin-bottom: 10px;
 }
 
 .no_hay {
@@ -321,7 +313,7 @@ footer {
     height: 140px;
     display: block;
     margin-top: 20px;
-    
+
 
 }
 
@@ -371,17 +363,17 @@ footer {
 }
 
 .menos {
-  
+
     padding: 10px;
     border-radius: 20%;
-      box-shadow: 0 1px 5px #6d2e46;
+    box-shadow: 0 1px 5px #6d2e46;
 }
 
 .mas {
     background-color: #d6b8b4;
     padding: 10px;
     border-radius: 20%;
-      box-shadow: 0 3px 5px #6d2e46;
+    box-shadow: 0 3px 5px #6d2e46;
 }
 
 .comprar {
@@ -389,13 +381,13 @@ footer {
     background-color: #d6b8b4;
     padding: 10px;
     border-radius: 10%;
-      box-shadow: 0 3px 5px #6d2e46;
+    box-shadow: 0 3px 5px #6d2e46;
 }
 
 .estrella {
-    font-size: 80px;
+    font-size: 60px;
     color: #dbb42c;
-    
+
 }
 
 .formulario textarea {
@@ -410,15 +402,15 @@ footer {
     border-radius: 5px;
     margin-bottom: 10px;
     width: 400px;
-        box-shadow: 0 1px 5px #6d2e46;
+    box-shadow: 0 1px 5px #6d2e46;
 }
 
 .res {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content:left;
-    
+    justify-content: left;
+
 }
 
 
@@ -426,14 +418,8 @@ footer {
     color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
     align-self: flex-start;
-    padding-right: 10px;
     margin-left: 60px;
-}
-
-.res p {
-    font-family: monospace, Arial, sans-serif;
-    align-self: flex-start;
-    padding-right: 10px;
+    margin-bottom: 20px;
 }
 
 .lindo {
@@ -441,7 +427,7 @@ footer {
     font-family: monospace, Arial, sans-serif;
     margin-left: 60px;
     margin-right: 60px;
- 
+
 
 }
 
@@ -453,7 +439,7 @@ footer {
 .comentarios {
     padding-top: 30px;
     padding-bottom: 30px;
-    
+
 
 }
 
@@ -524,7 +510,7 @@ footer {
     padding: 70px;
     border-radius: 5px;
     border: solid #6d2e46 1px;
-    
+
 }
 
 .sesion input {
@@ -538,7 +524,7 @@ footer {
     flex-direction: column;
     margin-bottom: 15px;
     font-size: 20px;
-     
+
 }
 
 .sesion div {
@@ -578,7 +564,7 @@ p {
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-        box-shadow: 0 1px 5px #6d2e46;
+    box-shadow: 0 1px 5px #6d2e46;
 
 }
 
