@@ -639,12 +639,9 @@ p {
         flex-direction: column;
         margin-left: 0;
         padding: 0 10px;
-      
-
     }
 
     .categorias ul {
-        display: block;
         width: 100%;
         height: auto;
         border-right: none;
