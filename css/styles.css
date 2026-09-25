@@ -332,6 +332,7 @@ footer {
     color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .grande {
@@ -738,5 +739,47 @@ p {
         align-items: flex-start;
     }
 
-
+    .chico img {
+        display: none;
+    }
+    .grande img {
+         width: 350px;
+        height: 340px;
+       margin: auto;
+    }
+    .item {
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+        
+    }
+    .desc {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;     
+    }
+    .formulario textarea{
+        width: 200px;
+    }
+    .chico {
+        order: 1;
+    }
+    .grande {
+        order: 2;
+    }
+    .comprar {
+        margin: none;
+    }
+    .imgregis {
+        display: none;
+    }
+    .sesion p {
+        font-size: 18px;
+    }
+    .sesion h2 {
+        font-size: 25px;
+    }
+    .sesion {
+        margin-top: 25px;
+    }
 }
