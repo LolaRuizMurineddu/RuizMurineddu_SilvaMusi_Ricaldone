@@ -24,19 +24,21 @@ body {
 
 
 .contenedor {
-    flex: 1;
+    width: 100%;
     background-color: #d6b8b4;
     display: flex;
     flex-direction: column;
+
 }
 
 
 .titulo {
-    flex: 1;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #7c4852;
+    height: 60px;
 }
 
 .texto-titulo {
@@ -49,7 +51,7 @@ body {
 
 
 .menu {
-    flex: 1;
+    height: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,9 +180,10 @@ body {
 }
 
 
-.father{
-    margin-left:50px;
+.father {
+    margin-left: 50px;
 }
+
 .prod {
     margin-top: 40px;
     color: #6d2e46;
@@ -214,7 +217,7 @@ a {
     color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
     text-decoration: none;
- 
+
 }
 
 .prendas img {
@@ -222,7 +225,7 @@ a {
     height: 274px;
     margin-top: 10px;
     margin-bottom: 5px;
-  
+
 }
 
 .botondet {
@@ -233,8 +236,8 @@ a {
     border-radius: 5px;
 }
 
-.botondet a{
-    padding-left:36px;
+.botondet a {
+    padding-left: 36px;
 }
 
 .precio {
@@ -289,7 +292,7 @@ footer {
 .nuevos {
     color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
-    margin-left:20px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
 
@@ -571,4 +574,172 @@ p {
 .reg {
     border-bottom: solid #6d2e46 1px;
     width: fit-content;
+}
+
+
+
+
+
+
+@media (max-width: 440px) {
+    .banner {
+        display: none;
+    }
+
+    .mapa {
+        display: none;
+    }
+
+    .header {
+        height: auto;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .contenedor {
+        width: 75%;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .navegador ul {
+        flex-direction: row;
+    }
+
+    .navegador a {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border: none;
+        font-size: 10px;
+    }
+
+    .casa {
+        border-left: #6d2e46 solid 1px;
+    }
+
+    .buscar {
+        border-left: none;
+        border-top: 1px solid #7c4852;
+        width: 100%;
+        padding: 4px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .padre-categoria {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0 10px;
+      
+
+    }
+
+    .categorias ul {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        margin: 15px 0;
+        padding: 0;
+        
+    }
+
+    .categorias {
+        border-right: none;
+        text-align: center;
+    }
+
+    .categorias li,
+    ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+
+    .categorias a,
+    ul {
+        display: inline;
+        width: auto;
+        height: auto;
+        margin-right: 6px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .titulocate {
+        font-size: 20px;
+        margin-bottom: 8px;
+        margin-bottom:15px;
+    }
+
+    .father {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .prod {
+        margin-left: 0;
+        font-size: 23px;
+    }
+
+    .prendas {
+        width: 30%;
+        margin: 4px;
+        padding: 4px;
+        margin-right: 10px;
+    }
+
+    .prendas img {
+        width: 92px;
+        height: 120px;
+    }
+
+    .prendas h3,
+    .prendas p {
+        font-size: 10px;
+    }
+
+    .botondet {
+        padding: 2px 0;
+        font-size: 8px;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .botondet a {
+        padding-left: 0;
+        display: block;
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+    .homedirec a {
+        font-size: 13px;
+    }
+
+    .nuevos {
+        margin-left:0px;
+        font-size: 27px;
+        margin-top:40px;
+        border-top: #6d2e46 solid 1px;
+        padding-top: 15px;
+
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
 }
