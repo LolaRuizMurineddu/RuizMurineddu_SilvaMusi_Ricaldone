@@ -46,7 +46,6 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #6d2e46;
-    letter-spacing: 1px;
 }
 
 
@@ -60,7 +59,6 @@ body {
 
 .navegador ul {
     display: flex;
-    list-style: none;
     height: 100%;
 }
 
@@ -170,11 +168,9 @@ body {
 }
 
 .banner img {
-    
     width: 323px;
     height: 377px;
     margin: 0px;
-
 }
 
 
@@ -206,7 +202,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .prendas h3,
@@ -215,7 +210,6 @@ a {
     color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
     text-decoration: none;
-
 }
 
 .prendas img {
@@ -354,17 +348,20 @@ footer {
     border-top: #6d2e46 solid 1px;
     padding-top: 10px;
 }
+
 .tag li {
-     color: #6d2e46;
+    color: #6d2e46;
     font-family: monospace, Arial, sans-serif;
     padding-right: 10px;
 }
+
 .tag {
     display: flex;
     flex-direction: row;
     border-top: #6d2e46 solid 1px;
     padding-top: 10px;
 }
+
 .menos,
 .uno,
 .mas,
@@ -496,8 +493,6 @@ footer {
 .iniciar {
     display: flex;
     font-size: 25px;
-
-
 }
 
 
@@ -528,7 +523,6 @@ footer {
     border-right: none;
     border-left: none;
     outline: none;
-    
     margin-bottom: 15px;
     font-size: 20px;
 
@@ -580,6 +574,24 @@ p {
     width: fit-content;
 }
 
+.sesion .terminosycond {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+   
+}
+
+.sesion .terminosycond input {
+    margin-bottom: 0;
+}
+
+.sesion .terminosycond label {
+    margin-bottom: 0;
+    font-size: 14px;
+     padding-left:5px ;
+}
 
 
 
@@ -651,7 +663,7 @@ p {
         border-right: none;
         margin: 15px 0;
         padding: 0;
-        
+
     }
 
     .categorias {
@@ -678,8 +690,8 @@ p {
 
     .titulocate {
         font-size: 20px;
-        
-        margin-bottom:15px;
+
+        margin-bottom: 15px;
     }
 
     .father {
@@ -729,9 +741,9 @@ p {
     }
 
     .nuevos {
-        margin-left:0px;
+        margin-left: 0px;
         font-size: 27px;
-        margin-top:40px;
+        margin-top: 40px;
         border-top: #6d2e46 solid 1px;
         padding-top: 15px;
 
@@ -745,43 +757,54 @@ p {
     .chico img {
         display: none;
     }
+
     .grande img {
-         width: 350px;
+        width: 350px;
         height: 340px;
-       margin: auto;
+        margin: auto;
     }
+
     .item {
         margin-left: 10px;
         margin-right: 10px;
         flex-direction: column;
-        
+
     }
+
     .desc {
-    order: 3;
-    width: 100%;
-    margin-top: 20px;     
+        order: 3;
+        width: 100%;
+        margin-top: 20px;
     }
-    .formulario textarea{
+
+    .formulario textarea {
         width: 200px;
     }
+
     .chico {
         order: 1;
     }
+
     .grande {
         order: 2;
     }
+
     .comprar {
-    margin: 0;
+        margin: 0;
     }
+
     .imgregis {
         display: none;
     }
+
     .sesion p {
         font-size: 18px;
     }
+
     .sesion h2 {
         font-size: 25px;
     }
+
     .sesion {
         margin-top: 25px;
     }
