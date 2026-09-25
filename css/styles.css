@@ -356,7 +356,17 @@ footer {
     border-top: #6d2e46 solid 1px;
     padding-top: 10px;
 }
-
+.tag li {
+     color: #6d2e46;
+    font-family: monospace, Arial, sans-serif;
+    padding-right: 10px;
+}
+.tag {
+    display: flex;
+    flex-direction: row;
+    border-top: #6d2e46 solid 1px;
+    padding-top: 10px;
+}
 .menos,
 .uno,
 .mas,
