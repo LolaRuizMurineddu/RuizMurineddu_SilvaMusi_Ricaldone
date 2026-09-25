@@ -145,7 +145,6 @@ body {
 
 .padre-categoria a {
     display: flex;
-    text-decoration: none;
     margin: 10px;
     margin-left: 20px;
     color: #6d2e46;
@@ -171,8 +170,7 @@ body {
 }
 
 .banner img {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    
     width: 323px;
     height: 377px;
     margin: 0px;
@@ -450,12 +448,8 @@ footer {
     color: #dbb42c;
 }
 
-.comentarios {
-    padding-top: 30px;
-    padding-bottom: 30px;
 
 
-}
 
 .comentarios1 {
     background-color: #d6ccc2;
@@ -534,8 +528,7 @@ footer {
     border-right: none;
     border-left: none;
     outline: none;
-    display: flex;
-    flex-direction: column;
+    
     margin-bottom: 15px;
     font-size: 20px;
 
@@ -685,7 +678,7 @@ p {
 
     .titulocate {
         font-size: 20px;
-        margin-bottom: 8px;
+        
         margin-bottom:15px;
     }
 
@@ -778,7 +771,7 @@ p {
         order: 2;
     }
     .comprar {
-        margin: none;
+    margin: 0;
     }
     .imgregis {
         display: none;
