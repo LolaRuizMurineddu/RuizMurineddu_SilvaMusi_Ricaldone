@@ -5,18 +5,22 @@ let busqueda = queryStringObj.get("q");
 
 let contenedorBusqueda = document.querySelector("#resultados-busqueda");
 
-document.querySelector("#titulo-busqueda").innerText = "Resultados de búsqueda: " + busqueda;
+
+document.querySelector("#titulo-busqueda").innerText = "Resultados de búsqueda para: " + busqueda;
+
 
 fetch('https://dummyjson.com/products/search?q=' + busqueda)
-    .then(function(response){
+    .then(function (response) {
         return response.json();
     })
-    .then(function(data){
+    .then(function (data) {
 
         let productos = "";
 
         if (data.products.length == 0) {
-            productos = "<p>No se encontraron productos para tu búsqueda.</p>";
+
+            productos = `<p>No hay resultados para el término: ${busqueda}</p>`;
+
         } else {
 
             for (let i = 0; i < data.products.length; i++) {
@@ -40,6 +44,6 @@ fetch('https://dummyjson.com/products/search?q=' + busqueda)
         contenedorBusqueda.innerHTML = productos;
 
     })
-    .catch(function(error){
+    .catch(function (error) {
         console.log('El error es: ' + error);
     });
