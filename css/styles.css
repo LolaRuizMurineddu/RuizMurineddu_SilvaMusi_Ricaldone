@@ -670,22 +670,22 @@ p {
         text-align: center;
     }
 
-    .categorias li,
-    ul {
-        display: inline;
-        margin: 0;
-        padding: 0;
-    }
+   
+.categorias li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 
-    .categorias a,
-    ul {
-        display: inline;
-        width: auto;
-        height: auto;
-        margin-right: 6px;
-        font-size: 13px;
-        line-height: 20px;
-    }
+.categorias a {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-right: 6px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
 
     .titulocate {
         font-size: 20px;

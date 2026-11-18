@@ -1,26 +1,39 @@
-let listaCategorias = document.querySelector("#lista-categorias");
 
-fetch('https://dummyjson.com/products/categories')
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let categoria = queryStringObj.get("category");
+
+
+let contenedorCategoria = document.querySelector("#productos-categoria");
+
+fetch(`https://dummyjson.com/products/category/${categoria}?limit=0`)
     .then(function(response){
         return response.json();
     })
     .then(function(data){
 
-        let categorias = '<h3 class="titulocate">CATEGORIAS</h3>';
+        let productos = "";
 
-        for(let i = 0; i < data.length; i++){
+        for(let i = 0; i < data.products.length; i++){
 
-            categorias = categorias + `
-                <li>
-                    <a href="./category.html?category=${data[i].slug}">
-                        ${data[i].name}
-                    </a>
-                </li>
+            productos = productos + `
+                <article class="prendas">
+                    <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}">
+                    <h3>${data.products[i].title}</h3>
+                    <p>${data.products[i].description}</p>
+                    <p class="precio">$${data.products[i].price}</p>
+                    <div class="botondet">
+                        <a href="./product.html?id=${data.products[i].id}">Ver detalle</a>
+                    </div>
+                </article>
             `;
 
         }
 
-        listaCategorias.innerHTML = categorias;
+        contenedorCategoria.innerHTML = productos;
+
+document.querySelector(".nuevos").innerHTML = `// ${categoria}`;
+
 
     })
     .catch(function(error){
